@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+
+
+    --flex: flex;
+    --fd--row: row;
+    --fd--col: column;
+}
+
+.container {
+    width: 80%;
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+.row {
+    display: var(--flex);
+    flex-direction: var(--fd--row);
+}
+header {
+    background: #136c72;
+}
+.nav__list {
+    width: 100%;
+    display: var(--flex);
+    list-style-type: none;
+    margin: 0;
+}
+.nav__item + .nav__item {
+    margin-left: 1rem;
+}

@@ -3,8 +3,38 @@
 *::after {
     box-sizing: border-box;
 }
-    <!-- HTML !-->
+body {
+    margin: 0;
+    font-family: 'Spectral', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.space--around {
+    flex-direction: row;
+    justify-content: space-around;
+}
+.h1--auto {
+    margin: 0 auto;
+    width: 25%;
+}
+/* https://getcssscan.com/css-buttons-examples?ref=beautifulboxshadow-bottom */
 
+.button-74--help {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+}
 /* CSS */
 .button-74 {
     background-color: #fbeee0;
@@ -39,5 +69,4 @@
         min-width: 120px;
         padding: 0 25px;
     }
-}
 }

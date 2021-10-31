@@ -36,7 +36,10 @@ pre code {
 .marginTitle {
     margin-left: 16px;
 }
-
+pre code {
+    word-wrap: break-word;
+    display: block;
+}
 .token.cdata,
 .token.comment,
 .token.doctype,
@@ -72,7 +75,6 @@ pre code {
     color: #aa7ee1
 }
 
-.token.atrule,
 .token.keyword,
 .token.string {
     color: #83ba52

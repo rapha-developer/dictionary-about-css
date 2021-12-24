@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+body,
+nav,
+ul,
+li,
+a,
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}

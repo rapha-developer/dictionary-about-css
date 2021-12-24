@@ -2,10 +2,14 @@
 
 
 body {
-    font-family: 'Poppins', sans-serif; //Playfair Display
+    font-family: "Poppins", sans-serif; //Playfair Display
 
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 5fr);
     line-height: 27px;
+}
+
+.mainWrapper {
+    display: grid;
+    grid-template-columns: auto 7fr;
+
 }

@@ -2,4 +2,43 @@
     background: url('https://a6e8z9v6.stackpathcdn.com/akea/homepage3/wp-content/uploads/2018/11/hp2-hero-bg.jpg');
     background-size: cover;
     background-position: center bottom;
+    height: 805.34px;
+    
+    &Wrapper {
+        margin: 120px 130px 0px;
+        text-align: center;
+    }
+    &__img {
+        border: solid 24px #f3f3f3;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+    }
+    &__imgWrapper {
+        padding: 0px 20px 55px;
+    }
+    &__title {
+        color:#989898;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &__titleWrapper {
+        padding: 0px 20px 10px;
+
+    }
+    &__span {
+        color: #1d1d1d;
+        font-size: 46px;
+        font-weight: 700;
+        padding: 0px 20px 30px;
+        
+    }
+    &__description {
+        color: #8f8f8f;
+        font-size: 18px;
+        line-height: 1.8;
+        text-align: center;
+    }
+    &__descWrapper {
+        padding: 0px 25px 30px;
+    }
 }

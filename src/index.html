@@ -4,54 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" id="gdlr-core-google-font-css" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPT+Serif%3Aregular%2Citalic%2C700%2C700italic%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;subset=latin%2Clatin-ext%2Cdevanagari%2Ccyrillic-ext%2Cvietnamese%2Ccyrillic%2Cgreek-ext%2Cgreek&amp;ver=5.8.1" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    
-    <title>Dictionary about CSS</title>
+    <title>Tutorials</title>
 </head>
 <body>
-    <main class="mainWrapper">
+
+    <aside>
         <div class="sidebar">
-            <div class="sidebar__img">
-                <img src="https://a6e8z9v6.stackpathcdn.com/akea/homepage3/wp-content/uploads/2018/11/logo-hp3.png" alt="Personal Logo" class="">
+            <div class="sidebar__imgWrapper">
+                <img src="images/raphael_logo_transparent.png" alt="Personal photo blog">
             </div>
-            <!-- <img src="images/raphael_logo-removebg-preview.png" alt=""> -->
-            <nav class="sidebar__nav">
-                <ul class="sidebar__list">
-                    <li class="sidebar__item"><a class="sidebar__link" href="">Home</a></li>
-                    <li class="sidebar__item"><a class="sidebar__link" href="">Pages</a></li>
-                    <li class="sidebar__item"><a class="sidebar__link" href="">Category</a></li>
-                    <li class="sidebar__item"><a class="sidebar__link" href="">Layout</a></li>
-                    <li class="sidebar__item"><a class="sidebar__link" href="">About</a></li>
-                    <li class="sidebar__item"><a class="sidebar__link" href="">Features</a></li>
+            <nav class="nav" id="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#">Home</a></li>
+                    <li class="nav__item"><a href="#">animações</a></li>
+                    <li class="nav__item"><a href="#">centralize</a></li>
+                    <li class="nav__item"><a href="#">grid layouts</a></li>
+                    <li class="nav__item"><a href="#">flexbox</a></li>
+                    <li class="nav__item"><a href="#">etcetera</a></li>
                 </ul>
-                
-                <ul class="sidebar__socialMedias">
-                    <li class="sidebar__media"><a class="sidebar__icon" href=""><i class="fab fa-pinterest-p"></i></a></li>
-                    <li class="sidebar__media"><a class="sidebar__icon" href=""><i class="fab fa-google-plus-g"></i></a></li>
-                    <li class="sidebar__media"><a class="sidebar__icon" href=""><i class="fab fa-youtube"></i></a></li>
-                    <li class="sidebar__media"><a class="sidebar__icon" href=""><i class="fab fa-linkedin"></i></a></li>
-                    <li class="sidebar__media"><a class="sidebar__icon" href=""><i class="fab fa-github"></i></a></li>
+                <ul class="meta">
+                    <li class="meta__item">
+                        <a href="#" class="meta__link"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                    <li class="meta__item">
+                        <a href="#" class="meta__link"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li class="meta__item">
+                        <a href="#" class="meta__link"><i class="fab fa-youtube"></i></i></a>
+                    </li>
+                    <li class="meta__item">
+                        <a href="#" class="meta__link"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="meta__item">
+                        <a target="_blank" href="https://github.com/rapha-desenvolvedor" class="meta__link"><i class="fab fa-github"></i></i></a>
+                    </li>
                 </ul>
             </nav>
+            <div class="space" id="space"></div>
+            <div class="bar" id="hamburger__bar">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-        <section class="presentation">
-            <div class="presentationWrapper">
-                <div class="presentation__imgWrapper">
-                    <img src="https://a6e8z9v6.stackpathcdn.com/akea/homepage3/wp-content/uploads/2018/11/hp2-hero-item-1.png" alt="Avatar Photo"  class="presentation__img">    
-                </div>
-                <div class="presentation__titleWrapper">
-                    <h1 class="presentation__title">
-                        <div class="presentation__titleWrapper">Hello! I am</div><br />
-                    <span class="presentation__span">Akea Rivera</span></h1>
-                </div>
-                <div class="presentation__descWrapper">
-                    <p class="presentation__description">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite.</p>
-                </div>
+    </aside>
+    <main class="main">
+        <section class="opener">
+            <div class="sectionWrapper openerWrapper">
+                <img src="https://avatars.githubusercontent.com/u/91702283?v=4" alt="Avatar Photo"  class="opener__img">
+                <h1 class="opener__title">Hello! I Am<br />
+                <span class="opener__title--accent">Rapha developer</span></h1>
+                <p class="opener__description">Este é um blog para registrar os snippets CSS durante o meu aprendizado, desde animações, propriedades :before ou :after, centralizar verticalmente ou horizontalmente conteúdos (contents). Cada artigo contém um gif para mostrar o resultado e o link para o code (in github). <strong>Welcome, my friend</strong>.</p>
+                <a href="#" class="opener__more">
+                    <span class="">More About Me </span><i class="fas fa-long-arrow-alt-right opener__arrow"></i>
+                </a>
                 
+            </div>
+        </section>
+        <section class="articles">
+            <div class="sectionWrapper">
+                <h2 class="articles__header">Recent Articles</h2>
+                <div class="articles__listWrapper">
+                    <article class="article">
+                        <div class="article__bg">
+                            <a class="article__img" href="#">
+                                <img src="//a6e8z9v6.stackpathcdn.com/akea/homepage3/wp-content/uploads/2018/11/juja-han-456323-unsplash-400x400.jpg" srcset="" sizes="" alt="" >
+                            </a>
+                        </div>
+                        <div class="article__category"><a href="#" rel="tag">Technology</a></div>
+                        <h3 class="article__title"><a href="#">Check Out New Trendy Smart Phones in Next Decade</a></h3>
+                        <p class="article__description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove...</p>
+                    </article>
+                    <article class="article">
+                        <div class="article__bg">
+                            <a class="article__img" href="#">
+                                <img src="//a6e8z9v6.stackpathcdn.com/akea/homepage3/wp-content/uploads/2018/11/post-vr-400x400.jpg" srcset="" sizes="" alt="" data-measuring="true" >
+                            </a>
+                        </div>
+                        <div class="article__category"><a href="#" rel="tag">Technology</a></div>
+                        <h3 class="article__title"><a href="#" data-measuring="true">Check Out The Most Awesome VR Headset in 2020</a></h3>
+                        <p class="article__description">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated...</p>
+                    </article>
+                    <article class="article">
+                        <div class="article__bg">
+                            <a href="#" class="article__img">
+                                <img src="//a6e8z9v6.stackpathcdn.com/akea/homepage3/wp-content/uploads/2018/11/yiran-ding-624696-unsplash-400x400.jpg" srcset="" sizes="" alt="" >
+                            </a>
+                        </div>
+                        <div class="article__category"><a href="#" rel="tag" data-measuring="true">Trending</a></div>
+                        <h3 class="article__title"><a href="#">Or It’s Now The End of Smartphones?</a></h3>
+                        <p class="article__description" >I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated...</p>
+                    </article>
+                    <article class="article">
+                        <div class="article__bg">
+                            <a href="#" class="article__img">
+                                <img src="//a6e8z9v6.stackpathcdn.com/akea/homepage3/wp-content/uploads/2018/11/christopher-burns-271403-unsplash-400x400.jpg" srcset="" sizes="" alt="">
+                            </a>
+                        </div>
+                        <div class="article__category"><a href="#" rel="tag" data-measuring="true">Trending</a></div>
+                        <h3 class="article__title"><a href="#">XE Entertainment Brings You New Experience of Fun</a></h3>
+                        <p class="article__description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove...</p>
+                    </article>
+                    <article class="article">
+                        <div class="article__bg">
+                            <a href="#" class="article__img" ><img class="ajuda" src="//a6e8z9v6.stackpathcdn.com/akea/homepage3/wp-content/uploads/2018/11/pexels-photo-736166-400x400.jpeg" srcset="" alt=""></a>
+                        </div>
+                        <div class="article__category">
+                            <a href="#" rel="tag" data-measuring="true">Headline</a>
+                        </div>
+                        <h3 class="article__title"><a href="#">Top Amazing Places to Go in Summer</a></h3>
+                        <p class="article__description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove...</p>
+                    </article>
+                    <article class="article">
+                        <div class="article__bg">
+                            <a class="article__img" href="#"><img src="//a6e8z9v6.stackpathcdn.com/akea/homepage3/wp-content/uploads/2018/11/pexels-photo-871053-400x400.jpeg"  srcset="" sizes="" alt=""></a>
+                        </div>
+                        <div class="article__category">
+                            <a href="#" rel="tag" data-measuring="true">Travel</a>
+                        </div>
+                        <h3 class="article__title"><a href="#">9 Most Awesome Blue Lake With Snow Mountain</a></h3>
+                        <p class="article__description">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated...</p>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
 </body>
 </html>
+<script defer>
+    const hamburger = document.getElementById('hamburger__bar');
+    const nav__menu = document.getElementById('nav__menu');
+    const space = document.getElementById('space');
+
+    hamburger.addEventListener('click',  () => {
+        nav__menu.classList.toggle('show');
+        space.classList.toggle('hidden');
+    });
+</script>

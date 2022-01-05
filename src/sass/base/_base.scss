@@ -1,15 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
-    font-family: "Poppins", sans-serif; //Playfair Display
-
-    min-height: 100vh;
-    line-height: 27px;
+    font-family: 'Poppins', 'Montserrat', 'sans-serif';
+    font-weight: 400;
 }
 
-.mainWrapper {
+.main {
+    margin-left: 20rem;
+    height: 100%;
+}
+.bar {
+    display: none;
+}
+.sectionWrapper {
+    padding: 75px 60px 105px;
+}
+.articles__header {
+    font-size: 29px;
+    font-weight: 700;
+    color: var(--color__accent--100);
+    margin: 25px 0px 65px;
+}
+.articles__listWrapper {
     display: grid;
-    grid-template-columns: auto 7fr;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    grid-gap: 40px;
+}
+.space {
+    display: none;
+}
 
+@media only screen and (max-width: 56rem) {
+    .main {
+        height: 100%;
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+    .bar {
+        display: block;
+        font-size: 22px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .space {
+        display: block;
+    }
+    .space.hidden {
+        display: none;
+    }
 }

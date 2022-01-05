@@ -1,0 +1,14 @@
+.meta {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+    }
+    &__link:hover {
+        color: var(--color__dark--200);
+    }
+}
+
+

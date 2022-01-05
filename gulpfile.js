@@ -14,15 +14,11 @@ function scssTask() {
     .pipe(dest('dist/css', { sourcemaps: '.' }));
 }
 // Css task
-function cssTask() {
-    return src('src/css/*.css', { sourcemaps: true })
-    .pipe(dest('dist/css', { sourcemaps: '.' }));
-}
-// Web font task
-function web_fontTask() {
-    return src('src/webfonts/*.{eot,svg,ttf,woff,woff2}', { sourcemaps: true })
-    .pipe(dest('dist/webfonts', { sourcemaps: '.' }));
-}
+// function cssTask() {
+//     return src('src/css/*.css', { sourcemaps: true })
+//     .pipe(dest('dist/css', { sourcemaps: '.' }));
+// }
+
 // Html task
 function htmlTask() {
     return src('src/*.html', { sourcemaps: false })
@@ -69,10 +65,9 @@ function watchTask() {
 
 exports.default = series(
     scssTask,
-    cssTask,
-    web_fontTask,
+    // cssTask,
     htmlTask,
-    // imgTask,
+    imgTask,
     browsersyncServe,
     watchTask
 );

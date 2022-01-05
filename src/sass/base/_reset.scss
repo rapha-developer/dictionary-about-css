@@ -1,26 +1,27 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 img {
     max-width: 100%;
 }
 body,
+main,
+section,
+article,
+aside,
+img,
+h1,
+h2,
+h3,
+h4,
 nav,
 ul,
 li,
+i,
 a,
-h1,
-h2,
-section {
+p {
     margin: 0;
     padding: 0;
-    border: none;
-}
-li {
-    list-style: none;
-}
-a {
     text-decoration: none;
+    list-style-type: none;
 }

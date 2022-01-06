@@ -13,11 +13,11 @@ function scssTask() {
     .pipe(postcss([cssnano()]))
     .pipe(dest('dist/css', { sourcemaps: '.' }));
 }
-// Css task
-// function cssTask() {
-//     return src('src/css/*.css', { sourcemaps: true })
-//     .pipe(dest('dist/css', { sourcemaps: '.' }));
-// }
+// Gif task
+function gifTask() {
+    return src('src/assets/*.gif',  { sourcemaps: false })
+    .pipe(dest('dist/assets', { sourcemaps: '.' } ));
+}
 
 // Html task
 function htmlTask() {
@@ -65,7 +65,7 @@ function watchTask() {
 
 exports.default = series(
     scssTask,
-    // cssTask,
+    gifTask,
     htmlTask,
     imgTask,
     browsersyncServe,

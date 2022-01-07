@@ -1,0 +1,25 @@
+.zoom {
+    line-height:0;
+    position:relative
+}
+.zoom__effect--100 img,
+.zoom__effect--200 img {
+    transition:opacity .3s ease-out,transform .3s ease-out,filter .3s ease-out;
+    -moz-transition:opacity .3s ease-out,-moz-transform .3s ease-out,-moz-filter .3s ease-out;
+    -o-transition:opacity .3s ease-out,-o-transform .3s ease-out,-o-filter .3s ease-out;
+    -webkit-transition:opacity .3s ease-out,-webkit-transform .3s ease-out,-webkit-filter .3s ease-out
+}
+.zoom__effect--100 {
+    background:#000;
+}
+.zoom__effect--100:hover img {
+    opacity:.5;
+    filter:alpha(opacity=50);
+}
+.zoom__effect--200 {
+    overflow:hidden;
+}
+.zoom__effect--200:hover img {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}

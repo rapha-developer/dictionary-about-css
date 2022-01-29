@@ -1,0 +1,41 @@
+.article {
+    height: 100%;
+    
+}
+.article__category {
+    color: var(--color__dark--200);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 32px 0px 8px 0px;
+}
+.article__category > * {
+    color: inherit;
+}
+.article__image img {
+    width: 100%;
+}
+.article__title {
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+.article__title > *  {
+    color: var(--color__articles--200);
+}
+.article__title a:hover {
+    color: var(--color__dark--200);
+}
+.article__description {
+    color: var(--color__articles--100);
+
+    line-height: 1.8;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* .article__img:hover  {
+} */
+
+

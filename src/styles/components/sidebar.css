@@ -11,32 +11,30 @@
     text-align: center;
     display: grid;
 
-    &__imgWrapper {
-        padding: 0 30px;
-    }
-
+}
+.sidebar__imgWrapper {
+    padding: 0 30px;
 }
 @media only screen and (max-width: 56rem) {
     .sidebar {
         position: fixed;
         top: 0;
         left: 0;
-        background-color: var(--bg__primary--200);
-        width: 100%;
+        background-color: #f7f7f7;
         height: auto;
+        width: 100%;
 
         padding: 25px 20px;
-
         text-align: center;
         display: grid;
         grid-template-columns: 3fr 8fr 2fr;
 
-        &__imgWrapper {
-            padding: 10px;
-        }
-        &__imgWrapper img {
-            max-width: 75%;
-        }
+        z-index: 1000;
     }
-
+    .sidebar__imgWrapper {
+        padding: 10px;
+    }
+    .sidebar__imgWrapper img {
+        max-width: 75%;
+    }
 }

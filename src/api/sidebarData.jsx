@@ -1,17 +1,17 @@
 export default [
     {
         id: 1,
-        url: "#",
+        url: "/",
         name: "Home"
     },
     {
         id: 2,
-        url: "#",
+        url: "/effects",
         name: "effects"
     },
     {
         id: 3,
-        url: "#",
+        url: "/user",
         name: "Components"
     },
     {

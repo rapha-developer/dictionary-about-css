@@ -1,7 +1,7 @@
-import Opener from "./Opener"
+import Opener from "../components/Opener"
 
-import Feed from "./Feed"
-import Article from "./Article"
+import Feed from "../components/Feed"
+import Article from "../components/Article"
 import articlesData from "../api/articlesData"
 
 

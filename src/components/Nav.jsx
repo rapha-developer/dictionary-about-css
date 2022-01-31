@@ -8,6 +8,7 @@ function Nav(props) {
         <NavItem 
             key={item.id}
             name={item.name}
+            url={item.url}
         />
     )
     const navClass = (props.show) ? "nav" : "nav show"

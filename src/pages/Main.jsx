@@ -20,6 +20,7 @@ function Main() {
             key={article.id}
             image={article.image} 
             tags={article.tags} 
+            codeUrl={article.codeUrl}
             title={article.title} 
             description={article.description}
         />

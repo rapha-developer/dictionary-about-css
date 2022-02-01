@@ -7,7 +7,7 @@ export default [
     },
     {
         id: 2,
-        url: "#",
+        url: "https://codepen.io/contatosraphaelmoreira",
         title: "Codepen",
         icon: "fab fa-codepen"
     },

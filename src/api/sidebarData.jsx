@@ -11,22 +11,22 @@ export default [
     },
     {
         id: 3,
-        url: "/user",
+        url: "/components",
         name: "Components"
     },
     {
         id: 4,
-        url: "#",
+        url: "/grids",
         name: "Grid"
     },
     {
         id: 5,
-        url: "#",
+        url: "/flexbox",
         name: "Flexbox"
     },
     {
         id: 6,
-        url: "#",
+        url: "/clones",
         name: "etcetera"
     },
 ]

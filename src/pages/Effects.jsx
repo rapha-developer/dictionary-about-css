@@ -9,6 +9,7 @@ function Effects() {
             key={effect.id}
             image={effect.image} 
             tags={effect.tags} 
+            codeUrl={effect.codeUrl}
             title={effect.title} 
             description={effect.description}
         />

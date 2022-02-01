@@ -27,6 +27,7 @@
 }
 .article__title a:hover {
     color: var(--color__dark--200);
+    cursor: pointer;
 }
 .article__description {
     color: var(--color__articles--100);

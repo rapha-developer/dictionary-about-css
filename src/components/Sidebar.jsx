@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../images/raphael_logo_transparent.png';
+import logo from '../images/raphael_logo_transparent.svg';
 
 import Nav from './Nav'
 

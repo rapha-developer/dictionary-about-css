@@ -12,6 +12,7 @@ import './styles/App.css'
 import Sidebar from './components/Sidebar'
 import Main from './pages/Main'
 import Effects from './pages/Effects'
+import Components from './pages/Components';
 
 function App() {
 
@@ -22,15 +23,36 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/effects" element={<Effects />} />
-          <Route path="/user" element={<Users />} />
+          <Route path="/components" element={<Components />} />
+          <Route path="/grids" element={<Grids />} />
+          <Route path="/flexbox" element={<Flexbox />} />
+          <Route path="/clones" element={<Clones />} />
         </Routes>
     </div>
     </BrowserRouter>
   )
 }
 
-function Users() {
-  return <h2>Users</h2>;
+function Grids() {
+  return (
+    <main className="main">
+      <h2>Em desenvolvimento...</h2>
+    </main>
+  );
+}
+function Flexbox() {
+  return (
+    <main className="main">
+      <h2>Em desenvolvimento...</h2>
+    </main>
+  );
+}
+function Clones() {
+  return (
+    <main className="main">
+      <h2>Em desenvolvimento...</h2>
+    </main>
+  );
 }
 
 export default App

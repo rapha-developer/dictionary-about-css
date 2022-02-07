@@ -1,0 +1,68 @@
+.bg--gradient {
+    background-image: linear-gradient(
+        235deg,
+        hsl(240deg 100% 90%) 0%,
+        hsl(260deg 100% 89%) 10%,
+        hsl(279deg 100% 89%) 20%,
+        hsl(298deg 100% 88%) 29%,
+        hsl(318deg 100% 87%) 39%,
+        hsl(337deg 100% 87%) 49%,
+        hsl(357deg 100% 86%) 59%,
+        hsl(17deg 100% 86%) 71%,
+        hsl(36deg 100% 85%) 84%,
+        hsl(55deg 100% 85%) 100%
+    );
+    min-height: 100vh;
+}
+.pp__10 {
+    padding: 5%;
+}
+.codification {
+    display: grid;
+    grid-template-columns: 420px 250px;
+    box-shadow: 0.3px 0.5px 0.7px rgba(152,124,162,0.36), 1.5px 2.9px 3.7px -0.4px rgba(152,124,162,0.36), 2.7px 5.4px 6.8px -0.7px rgba(152,124,162,0.36), 4.5px 8.9px 11.2px -1.1px rgba(152,124,162,0.36), 7.1px 14.3px 18px -1.4px rgba(152,124,162,0.36), 11.2px 22.3px 28.1px -1.8px rgba(152,124,162,0.36), 17px 33.9px 42.7px -2.1px rgba(152,124,162,0.36), 25px 50px 62.9px -2.5px rgba(152,124,162,0.36);
+    background: white;
+    border-radius: 10px;
+    max-width: fit-content;
+}
+.codification--highlights {
+    width: 100%;
+    height: 100%;
+}
+.codification--results {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 30px;
+}
+.flex {
+    display: flex;
+}
+pre[class*="language-"] {
+    overflow: hidden;
+    margin: 10px !important;
+    height: 26vh;
+    padding: 2em 1.5em !important;
+    width: 30vw;
+    border-radius: 15px;
+}
+pre {
+    position: relative;
+}
+
+.btn__show {
+    position: absolute;
+    right: 85px;
+    top: 8px;
+    text-decoration: none;
+    border: 2px solid #464A67;
+    background: #404040;
+    color: #bbb;
+    border-radius:0.5rem;
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+}
+.btn__show:hover {
+    opacity: 0.6;
+}

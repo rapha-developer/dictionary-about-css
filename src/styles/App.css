@@ -9,6 +9,7 @@
 @import "components/meta.css";
 @import "components/opener.css";
 @import "components/article.css";
+@import "components/code.css";
 
 /*===== Hover effects =====*/
 @import "utilities/zoom.css";

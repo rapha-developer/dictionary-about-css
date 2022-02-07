@@ -9,10 +9,12 @@ import {
 import logo from './logo.svg'
 import './styles/App.css'
 
+
 import Sidebar from './components/Sidebar'
 import Main from './pages/Main'
 import Effects from './pages/Effects'
 import Components from './pages/Components';
+import Grids from './pages/Grids';
 
 function App() {
 
@@ -33,13 +35,6 @@ function App() {
   )
 }
 
-function Grids() {
-  return (
-    <main className="main">
-      <h2>Em desenvolvimento...</h2>
-    </main>
-  );
-}
 function Flexbox() {
   return (
     <main className="main">

@@ -1,8 +1,28 @@
+import Code from '../components/Code';
+
+
 function Snippet(props) {
     return (
         <div>
-            <div dangerouslySetInnerHTML={{ __html: props.snippet }} />
+            <div className="snippet">
+            <h4 className="snippet__header">Authentication</h4>
+            <p className="snippet__text">You can use the Stripe API in test mode, which does not affect your live data or interact with the banking networks.</p>
+            <div className="snippet__codeblocks">
+                <div className="snippet__preview" 
+                    dangerouslySetInnerHTML={{ __html: props.codeSnippet }} 
+                />
+                <Code
+                    key={props.id}
+                    codeFirst={props.codeFirst}
+                    languageFirst={props.languageFirst}
+                    codeSecond={props.codeSecond}
+                    languageSecond={props.languageSecond}
+                />
+            </div>
         </div>
+        <hr className='snippet__line' />
+        </div> 
+        
     );
 }
 export default Snippet

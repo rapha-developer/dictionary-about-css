@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+@font-face {
+    font-family: "Segoe UI";
+    src: url("C:\\Users\\J&M\\Downloads\\segoe-ui\\Segoe UI Bold Italic.ttf") format("ttf"),
+        url("C:\\Users\\J&M\\Downloads\\segoe-ui\\Segoe UI Bold.ttf") format("ttf"),
+        url("C:\\Users\\J&M\\Downloads\\segoe-ui\\Segoe UI Italic.ttf") format("ttf"),
+        url("C:\\Users\\J&M\\Downloads\\segoe-ui\\Segoe UI.ttf") format("ttf");
+}
+
 body {
     font-family: 'Poppins', 'Montserrat', 'sans-serif';
     font-weight: 400;

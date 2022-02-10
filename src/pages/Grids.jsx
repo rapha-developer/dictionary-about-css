@@ -1,6 +1,5 @@
-import Code from '../components/Code';
-import codeData from '../api/codeData';
 import Snippet from '../components/Snippet';
+import codeData from '../api/codeData';
 
 function Grids() {
     // const [showHTML, setShowHTML] = useState(false)
@@ -34,39 +33,27 @@ function Grids() {
         <div class="item">a3</div>
     </div>
     `;
-    
-    // const code = showHTML ? codificationHtml : cssCode;
-    // useEffect(() => {
-    //     Prism.plugins.NormalizeWhitespace;
-    //     Prism.highlightAll()
-    // }, [code])
-    const code__list = codeData.map((codeItem) => {
-        return <Code
+
+    const snippet__list = codeData.map((codeItem) => {
+        return (
+            <Snippet 
                 key={codeItem.id}
+                id={codeItem.id}
+                header={codeItem.header}
+                tags={codeItem.tags}
                 codeFirst={codeItem.codeFirst}
                 languageFirst={codeItem.languageFirst}
                 codeSecond={codeItem.codeSecond}
                 languageSecond={codeItem.languageSecond}
-                />
+                codeSnippet={codeItem.codeSecond}
+            />
+        )
     });
-    const snippet__list = codeData.map((snippetItem) => {
-        return <Snippet
-                key={snippetItem.id}
-                snippet={snippetItem.codeSecond}
-                />
-    })
+
     return (
         <main className="main bg--gradient pp__10">
-            <h2>Em desenvolvimento...</h2>
-            <br />
-            <div className="codification">
-                <div className="codification--highlights">
-                    {code__list}
-                </div>
-                <div className="codification--results ">
-                    {snippet__list}
-                </div>
-            </div>
+            <h2 className="articles__header">Grids Snippets</h2>
+            {snippet__list}
         </main>
     );
 }

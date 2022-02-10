@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import '../assets/prism.css'
 import '../assets/prism'
 
-function Code({codeFirst, languageFirst, codeSecond, languageSecond}){
+function Code({ codeFirst, languageFirst, codeSecond, languageSecond}){
     const [showCodeFirst, setShowCodeFirst] = useState(false);
 
     const code = showCodeFirst ? codeSecond : codeFirst;
@@ -19,10 +19,12 @@ function Code({codeFirst, languageFirst, codeSecond, languageSecond}){
         setShowCodeFirst(prevCode => !prevCode)
     }
     return (
-        <pre className='flex'>
-            <button className='btn__show' onClick={toggleCode}>Show {btn__language}</button>
-            <code className={`language-${language}`}>{code}</code>
-        </pre>
+        <div className="codeWrapper">
+            <pre className="code__attributes">
+                <button className='btn__show' onClick={toggleCode}>Show {btn__language}</button>
+                <code className={`language-${language}`}>{code}</code>
+            </pre>
+        </div>
     );
 }
 

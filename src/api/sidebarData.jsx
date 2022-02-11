@@ -24,9 +24,4 @@ export default [
         url: "/flexbox",
         name: "Flexbox"
     },
-    {
-        id: 6,
-        url: "/clones",
-        name: "etcetera"
-    },
 ]

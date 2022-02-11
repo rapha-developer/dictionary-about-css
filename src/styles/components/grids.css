@@ -1,25 +1,13 @@
-:root {
-    --clr__code--100:#F8F9FC; 
-    --clr__code--200:#ABB6CD; 
-    --clr__code--300:#6A729C; 
-    --clr__code--400:#41465B; 
-    --clr__code--500:#7594D1; 
-    --clr__code--600: #3d4eac;
-}
-.bg--gradient {
-    background:#FFF;
+.bg--grids {
+    background: var(--clr__neutral--100);
     min-height: 100vh;
 }
-.bg--gradient h2 {
+.bg--grids h2 {
     color: var(--clr__code--600);
 }
 .pp__10 {
     padding: 5%;
 }
-
-/* https://dribbble.com/shots/15132830-Evergreen-Segment-s-Design-System */
-/* https://dribbble.com/shots/12677063-Docs-View/attachments/4276177?mode=media */
-/* https://stripe.com/docs/api/metadata */
 .snippet {
     font-family: 'Segoe UI', sans-serif;
     color: var(--clr__code--600);
@@ -43,7 +31,7 @@
     font-size: 14px;
     max-width: 70%;
     margin-bottom: 25px;
-    color:#4f566b;
+    color: var(--clr__code--300);
 }
 .snippet__codeblocks {
     border-radius: 15px;
@@ -61,7 +49,7 @@
 }
 .snippet__codeblocks,
 pre[class*="language-"] {
-    background:rgba(248, 249, 252, .6) !important;
+    background: var(--clr__code--100) !important;
 
 }
 pre {
@@ -73,9 +61,9 @@ pre {
     right: 85px;
     top: 8px;
     text-decoration: none;
-    border: 2px solid #464A67;
-    background: #404040;
-    color: #bbb;
+    border: 2px solid var(--clr__code--100);
+    background: var(--clr__code--400);
+    color: var(--clr__code--200);
     border-radius:0.5rem;
     padding: 0.2rem 0.4rem;
     cursor: pointer;

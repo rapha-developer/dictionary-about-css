@@ -5,8 +5,8 @@ function Snippet(props) {
     return (
         <div>
             <div className="snippet">
-            <h4 className="snippet__header">Authentication</h4>
-            <p className="snippet__text">You can use the Stripe API in test mode, which does not affect your live data or interact with the banking networks.</p>
+            <h4 className="snippet__header">{props.header}</h4>
+            <p className="snippet__text">{props.text}</p>
             <div className="snippet__codeblocks">
                 <div className="snippet__preview" 
                     dangerouslySetInnerHTML={{ __html: props.codeSnippet }} 

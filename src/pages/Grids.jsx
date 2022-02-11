@@ -1,38 +1,7 @@
 import Snippet from '../components/Snippet';
-import codeData from '../api/codeData';
+import codeData from '../api/gridData';
 
 function Grids() {
-    // const [showHTML, setShowHTML] = useState(false)
-
-    // function toggleTextButton() {
-    //     return (showHTML) ? 'CSS': 'HTML';
-    // }
-    // function toggleCode() {
-    //     setShowHTML((prevCode) => !prevCode);
-    // }
-
-    const htmlCode = ( 
-        <div className="container">
-            <div className="item">a1</div>
-            <div className="item">a2</div>
-            <div className="item">a3</div>
-        </div>
-    );
-    // const cssCode = 
-    // `
-    // .container {
-    //     margin: 0px auto;
-    //     color: red;
-    // }
-    // `;
-    const codificationHtml = 
-    `
-    <div class="container">
-        <div class="item">a1</div>
-        <div class="item">a2</div>
-        <div class="item">a3</div>
-    </div>
-    `;
 
     const snippet__list = codeData.map((codeItem) => {
         return (
@@ -40,7 +9,7 @@ function Grids() {
                 key={codeItem.id}
                 id={codeItem.id}
                 header={codeItem.header}
-                tags={codeItem.tags}
+                text={codeItem.text}
                 codeFirst={codeItem.codeFirst}
                 languageFirst={codeItem.languageFirst}
                 codeSecond={codeItem.codeSecond}
@@ -51,7 +20,7 @@ function Grids() {
     });
 
     return (
-        <main className="main bg--gradient pp__10">
+        <main className="main bg--grids pp__10">
             <h2 className="articles__header">Grids Snippets</h2>
             {snippet__list}
         </main>

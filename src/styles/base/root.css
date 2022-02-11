@@ -12,4 +12,11 @@
     --color__articles--100: #787878;
     --color__articles--200: #343434;
     --color__neutral--100: #FFFFFF;
+
+    --clr__code--100:#f5f8ff; 
+    --clr__code--200:#ABB6CD; 
+    --clr__code--300:#4f566b; 
+    --clr__code--400:#41465B; 
+    --clr__code--500:#7594D1; 
+    --clr__code--600: #3d4eac;
 }

@@ -9,7 +9,10 @@
 @import "components/meta.css";
 @import "components/opener.css";
 @import "components/article.css";
-@import "components/code.css";
+@import "components/grids.css";
 
 /*===== Hover effects =====*/
 @import "utilities/zoom.css";
+@import "utilities/codes.css";
+@import "utilities/grids__snippet.css";
+@import "utilities/flex__snippet.css";

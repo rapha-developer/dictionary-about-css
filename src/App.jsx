@@ -15,6 +15,7 @@ import Main from './pages/Main'
 import Effects from './pages/Effects'
 import Components from './pages/Components';
 import Grids from './pages/Grids';
+import Flex from './pages/Flex';
 
 function App() {
 
@@ -27,27 +28,12 @@ function App() {
           <Route path="/effects" element={<Effects />} />
           <Route path="/components" element={<Components />} />
           <Route path="/grids" element={<Grids />} />
-          <Route path="/flexbox" element={<Flexbox />} />
-          <Route path="/clones" element={<Clones />} />
+          <Route path="/flexbox" element={<Flex />} />
         </Routes>
     </div>
     </BrowserRouter>
   )
 }
 
-function Flexbox() {
-  return (
-    <main className="main">
-      <h2>Em desenvolvimento...</h2>
-    </main>
-  );
-}
-function Clones() {
-  return (
-    <main className="main">
-      <h2>Em desenvolvimento...</h2>
-    </main>
-  );
-}
 
 export default App
